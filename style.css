@@ -32,12 +32,23 @@ img{
  --color-white:#fff;
  --color-muted:#A4AEA6;
  --color-cursor:#5FED83;
+ --color-button-primary-bg: #08872B;
+ --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
+ --color-button-secondary-border: rgba(255, 255, 255, 0.16);
  --color-border-muted:#191f1b;
+ --color-focus: #3094ff;
  --container-width: 1280px;
  --spacing-64: 64px;
  --eyebrow-font-size: 14px;
  --text-200-font-size: 16px;
  --text-200-line-height: 1.5;
+ 
+}
+
+@media (max-width:640px) {
+  :root {
+    ----heading-1-font-size: 36px;
+  }
 }
 
  body {
@@ -80,7 +91,7 @@ img{
   gap: 0.42em;
 }
 
-.eyebrown-cursor rect{
+.eyebrow-cursor rect{
   fill: var(--color-cursor);
 
 }
@@ -91,8 +102,9 @@ img{
 
 .heading-size-1 {
   font-size: var(--heading-1-font-size);
- line-height: var(--heading-1-line-height);
+  line-height: var(--heading-1-line-height);
 }
+
 
 .text-size-200 {
   font-size: var(--text-200-font-size);
@@ -111,3 +123,38 @@ img{
  .hero-image{
   margin-top: calc(64px - var(--hero-content-gap)); 
  }
+
+ .button {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid;
+  padding: 0.6em 1.25em;
+  font-weight: 500;
+  letter-spacing: 0.16;
+  border-radius: 0.375em;
+  transition: background-color 300ms ease-in-out;
+  
+ }
+
+ .button-primary {
+  background-color: var(--color-button-primary-bg);
+  border-color: transparent;
+ }
+
+ .button-primary:hover {
+  background-color: color-mix(in srgb, var(--color-button-primary-bg), #000 16%);
+ }
+
+ .button-secondary{
+   background-color: var(--color-button-secondary-bg);
+   border: var(--color-button-secondary-border);
+ }
+
+ .button-secondary:hover {
+  background-color: color-mix(in srgb, var(--color-button-secondary-bg), #fff 6%);
+}
+
+.button:focus-visible {
+  outline: 4px solid  var(--color-focus);
+  outline-offset: 2px;
+}
