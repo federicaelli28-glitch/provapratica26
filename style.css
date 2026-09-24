@@ -574,7 +574,7 @@ body {
 
 .container-hero {
     background-color: #fff;
-    color: var(--color-black);
+     color: var(--color-black);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -585,17 +585,37 @@ body {
     padding-right: 64px;
     padding-bottom: 24px;
     padding-top: 24px;
+    border-color: 1px solid var(--color-border-muted);
 }
 .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap:48px;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 .box{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 251.48px;
+    height: 77px;
+    text-align: start;
+    gap:8px;
+    border-color: var(--color-border-muted);
 }
 
-.box-studente {
-    
+.info 
+{
+color: var(--color-muted);
+font-size: var(--eyebrow-font-size);
 }
+.text-info {
+    color: var(--color-black);
+    font-size: var(--text-200-font-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+  
+
+
