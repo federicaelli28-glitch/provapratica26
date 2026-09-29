@@ -662,17 +662,16 @@ font-size: var(--eyebrow-font-size);
 margin-left: auto;
 margin-right: auto;
 max-width: 484px;
-padding-top: 84px;
-padding-bottom: 84px;
+padding-top: 64px;
+padding-bottom:64px;
 display: flex;
 flex-direction: column;
 gap: 1em;
-
-
 }
 
-.container text-center border-inline 
-{
-    margin-left:auto;
-    margin-right: auto;
- }
+.info-box {
+
+    display:flex;
+    
+
+}
