@@ -45,15 +45,15 @@ img {
     --spacing-64: 64px;
     --eyebrow-font-size: 14px;
     --text-200-font-size: 16px;
-    --text-100-font-size: 32px;
+    --text-250-font-size: 32px;
     --text-150-font-size: 40px;
     --text-350-font-size: 20px;
     --text-400-font-size: 34px;
-    --text-100-line-height: 1.5;
+    --text-250-line-height: 1.5;
     --text-200-line-height: 1.5;
     --text-350-line-height: 1.5;
-    --text-100-font-size: 0.875em;
-    --text-100-line-height: 1.5;
+    --text-250-font-size: 0.875em;
+    --text-250-line-height: 1.5;
     --font-weight-medium: 500;
     --font-weight-semibold: 550;
     --border-width: 1px;
@@ -134,8 +134,8 @@ body {
     line-height: var(--heading-1-line-height);
 }
 
-.text-size-100 {
-    font-size: var(--text-100-font-size);
+.text-size-250 {
+    font-size: var(--text-250-font-size);
     line-height: var();
 }
 
@@ -675,14 +675,13 @@ body {
     font-size: var(--text-400-font-size);
     font-weight: var(--font-weight-medium);
 }
-.quote-size {
+.quote-text {
     font-family: var(--font-mono);
-    font-size: var(--text-100-font-size);
+   font-size: var(--text-250-font-size);
+  line-height: var(--text-250-line-height);
 }
-.text-size-100 {
-    font-size: var(--text-100-font-size);
-    font-weight: var(--text-100-line-height);
-}
+
+
 
 
 
