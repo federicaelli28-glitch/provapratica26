@@ -107,7 +107,7 @@ body {
 }
 
 .eyebrow {
-    font-size: var(14px);
+    font-size: var(--eyebrow-font-size);
     font-family: var(--font-mono);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -749,6 +749,9 @@ body {
     
 }
 
+.text-size-150 {
+    font-weight: var(--font-weight-medium);
+}
 
 .footer-content {
     --hero-text-max-width: 600px; 
@@ -767,11 +770,18 @@ body {
 
 .button-footer {
     max-width: 300px;
-    
-
     background-color: var(--color-button-primary-bg);
     border: none;
     
+}
+
+.button-footer{
+    background-color: var(--color-button-secondary-bg);
+    border-color: transparent;
+}
+
+.button-footer {
+    background-color: color-mix(in srgb, var(--color-button-secondary-bg), #fff 6%);
 }
 
 
