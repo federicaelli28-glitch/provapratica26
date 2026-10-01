@@ -742,6 +742,11 @@ body {
     align-items: center;
 }
 
+.breakoutTabs-card-button {
+    background: none;
+    border-color: 1px solid var(--);
+}
+
 @media (max-width: 1000px) {
     .breakoutTabs-box {
         grid-template-columns: 1fr;
