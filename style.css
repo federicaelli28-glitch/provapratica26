@@ -35,6 +35,7 @@ img {
     --color-white: #fff;
     --color-muted: #A4AEA6;
     --color-cursor: #5FED83;
+    --color-text-muted: #A4AEA6;
     --color-border-muted: #191f1b;
     --color-button-primary-bg: #08872B;
     --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
@@ -44,6 +45,7 @@ img {
     --spacing-64: 64px;
     --eyebrow-font-size: 14px;
     --text-200-font-size: 16px;
+    --text-150-font-size: 40px;
     --text-350-font-size: 20px;
     --text-400-font-size: 34px;
     --text-200-line-height: 1.5;
@@ -703,6 +705,7 @@ body {
     gap: 1em;
     border-top: 1px solid var(--color-border-muted);
     padding-top: 10px;
+    
 }
 
 .breakoutTabs-card.breakoutTabs-card-active {
@@ -743,9 +746,35 @@ body {
 }
 
 .breakoutTabs-card-button {
-    background: none;
-    border-color: 1px solid var(--);
+    
 }
+
+
+.footer-content {
+    --hero-text-max-width: 600px; 
+    background: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: var(--spacing-64);
+    border-left: 1px solid var(--color-border-muted);
+    border-right: 1px solid var(--color-border-muted);
+    align-items: center;
+    
+}
+
+.button-footer {
+    max-width: 300px;
+    
+
+    background-color: var(--color-button-primary-bg);
+    border: none;
+    
+}
+
+
 
 @media (max-width: 1000px) {
     .breakoutTabs-box {
