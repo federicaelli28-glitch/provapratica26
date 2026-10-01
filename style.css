@@ -776,7 +776,7 @@ body {
 }
 
 .button-footer{
-    background-color: var(--color-button-secondary-bg);
+    background-color: var(--color-button-primary-bg);
     border-color: transparent;
 }
 
