@@ -45,9 +45,11 @@ img {
     --spacing-64: 64px;
     --eyebrow-font-size: 14px;
     --text-200-font-size: 16px;
+    --text-100-font-size: 32px;
     --text-150-font-size: 40px;
     --text-350-font-size: 20px;
     --text-400-font-size: 34px;
+    --text-100-line-height: 1.5;
     --text-200-line-height: 1.5;
     --text-350-line-height: 1.5;
     --text-100-font-size: 0.875em;
@@ -132,6 +134,10 @@ body {
     line-height: var(--heading-1-line-height);
 }
 
+.text-size-100 {
+    font-size: var(--text-100-font-size);
+    line-height: var();
+}
 
 .text-size-200 {
     font-size: var(--text-200-font-size);
@@ -669,6 +675,19 @@ body {
     font-size: var(--text-400-font-size);
     font-weight: var(--font-weight-medium);
 }
+.quote-size {
+    font-family: var(--font-mono);
+    font-size: var(--text-100-font-size);
+}
+.text-size-100 {
+    font-size: var(--text-100-font-size);
+    font-weight: var(--text-100-line-height);
+}
+
+
+
+
+
 
 .narrow-box {
     margin-left: auto;
@@ -775,12 +794,7 @@ body {
     
 }
 
-.button-footer{
-    background-color: var(--color-button-primary-bg);
-    border-color: transparent;
-}
-
-.button-footer {
+.button-footer:hover {
     background-color: color-mix(in srgb, var(--color-button-secondary-bg), #fff 6%);
 }
 
