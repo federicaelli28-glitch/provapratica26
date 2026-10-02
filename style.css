@@ -136,7 +136,7 @@ body {
 
 .text-size-250 {
     font-size: var(--text-250-font-size);
-    line-height: var();
+    line-height: var(--texy);
 }
 
 .text-size-200 {
@@ -675,10 +675,41 @@ body {
     font-size: var(--text-400-font-size);
     font-weight: var(--font-weight-medium);
 }
+
+
 .quote-text {
     font-family: var(--font-mono);
    font-size: var(--text-250-font-size);
   line-height: var(--text-250-line-height);
+  
+}
+
+.quote-body {
+display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 48px; 
+    padding-top: 168px;
+    padding-bottom: 56px;
+    padding-right: 479px;
+    padding-left: 279px;
+}
+
+
+
+
+
+
+.quotebox {
+  max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 48px; 
+    border-top: 1px solid var(--color-border-muted);
+    padding-top: 10px;
+
 }
 
 
