@@ -697,6 +697,16 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
+.box-3 {
+     display: grid;
+    grid-template-columns: repeat(, 1fr);
+    gap: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
 .concept-boundary {
     margin-left: auto;
     margin-right: auto;
