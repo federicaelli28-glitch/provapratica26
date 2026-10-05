@@ -697,14 +697,32 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
-.concept {
+.concept-boundary {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: var(--spacing-64);
+    border-bottom:1px solid var(--color-border-muted);
+    border-left: 1px solid var(--color-border-muted);
+    border-right:1px solid var(--color-border-muted);
+    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-top: 64px;
+   
+    
 }
 
+.concept-subtitle {
+   font-weight: var(--font-weight-medium);
 
+}
+
+@media (max-width: 640px) {
+    :root {
+        --spacing-64: 32px;
+    }
+}
 
 .quotebox {
         max-width: var(--container-width);
