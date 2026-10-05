@@ -709,13 +709,25 @@ body {
     padding-bottom: 64px;
     padding-left: 64px;
     padding-top: 64px;
-   
-    
 }
 
 .concept-subtitle {
    font-weight: var(--font-weight-medium);
+}
 
+.eyebrow-concept {
+   gap: 16px;
+}
+
+.titolo-concept {
+   gap: 16px;
+}
+.concept-statement {
+   gap: 16px;
+}
+
+.concept-subtitle {
+    gap: 32px;
 }
 
 @media (max-width: 640px) {
