@@ -36,6 +36,7 @@ img {
     --color-muted: #A4AEA6;
     --color-cursor: #5FED83;
     --color-text-muted: #A4AEA6;
+    --color-text-muted2: #58635B;
     --color-border-muted: #191f1b;
     --color-button-primary-bg: #08872B;
     --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
@@ -45,13 +46,19 @@ img {
     --spacing-64: 64px;
     --eyebrow-font-size: 14px;
     --text-200-font-size: 16px;
+    --text-500-font-size: 22px;
+    --text-300-font-size: 18px;
     --text-250-font-size: 32px;
     --text-150-font-size: 40px;
     --text-350-font-size: 20px;
+    --text-700-font-size: 28px;
     --text-400-font-size: 34px;
     --text-250-line-height: 1.5;
     --text-200-line-height: 1.5;
+    --text-300-line-height: 1.5;
     --text-350-line-height: 1.5;
+    --text-500-line-height: 1.5;
+    --text-700-line-height: 1.3;
     --text-250-font-size: 0.875em;
     --text-250-line-height: 1.5;
     --font-weight-medium: 500;
@@ -144,11 +151,25 @@ body {
     line-height: var(--text-200-line-height);
 }
 
+.text-size-300 {
+    font-size: var(--text-300-font-size);
+    line-height: var(--text-300-line-height);
+}
+
 .text-size-350 {
     font-size: var(--text-350-font-size);
     line-height: var(--text-350-line-height);
 }
 
+.text-size-500 {
+    font-size: var(--text-500-font-size);
+    line-height: var(--text-500-line-height);
+}
+
+.text-size-700 {
+ font-size: var(--text-700-font-size);
+ line-height: var(--text-700-line-height);
+}
 .hero-text {
     max-width: var(--hero-text-max-width);
 }
@@ -676,6 +697,15 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
+.concept {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-64);
+}
+
+
+
 .quotebox {
         max-width: var(--container-width);
     margin-left: auto;
@@ -715,6 +745,10 @@ body {
     gap:24px;
  } 
 
+.concept-intro {
+    color: var(--color-text-muted2);
+    
+}
 
 
 .author-name {
