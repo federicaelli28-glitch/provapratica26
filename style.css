@@ -635,6 +635,7 @@ body {
     border-left: 1px solid var(--color-border-muted);
     border-right: 1px solid var(--color-border-muted);
     border-bottom: 1px solid var(--color-border-muted);
+
 }
 
 .content {
@@ -703,15 +704,20 @@ align-items: center;
 
 }
 
-.orientarsi .approfondire .trovare-le-fonti {
-    font-family:var(--font-mono);
-    font-size: var(--text-200-font-size);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--text-200-line-height);
-    color: var(--color-black);
-    margin: 0;
+.concept-boundary {
+ display:flex;
+ flex-direction: row;
+ justify-content: space-between;
+ text-align: left;
+ 
 }
 
+.Box-Pillars {
+ display: grid;
+ 
+
+
+}
 .Highlights-box {
      margin-left: auto;
     margin-right: auto;
@@ -723,8 +729,12 @@ align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-
+border-top: var(--color-border-muted);
+border-bottom: 1px solid var(--color-border-muted);
+border-right: 1px solid var(--color-border-muted);
+border-left: 1px solid var(--color-border-muted);
 }
+
 
 .concept-boundary {
     margin-left: auto;
@@ -807,16 +817,6 @@ align-items: center;
 .author-meta {
     font-size: var(--text-200-font-size);
     }
-
-
-
-
-
-
-
-
-
-
 
 .narrow-box {
     margin-left: auto;
