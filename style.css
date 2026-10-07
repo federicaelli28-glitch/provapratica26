@@ -703,7 +703,8 @@ body {
 .text-size-700 {
     font-weight: var(--font-weight-medium);
 }
-.concept-inner {
+.concept {
+    max-width: var(--container-width);
      margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -715,7 +716,6 @@ body {
     padding-top: 64px;
     padding-left: 64px;
     padding-right: 64px;
-    max-width: 936px;
     border-right:1px solid var(--color-border-muted);
     border-bottom:1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
@@ -731,20 +731,18 @@ body {
 }
 
 
-.Box-Pillars {
- display: grid;
- 
 
 
-}
 .Highlights-box {
+    max-width: var(--container-width);
  margin-left: auto;
     margin-right: auto;
-    max-width: 484px;
     padding-top: var(--spacing-64);
     padding-bottom: var(--spacing-64);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1em;
     padding-bottom: 64px;
     padding-left: 64px;
@@ -760,21 +758,81 @@ body {
 
 
 .concept-boundary {
+    max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  ;
     border-bottom:1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
     border-right:1px solid var(--color-border-muted);
-    padding-bottom: 64px;
-    padding-left: 64px;
-    padding-top: 64px;
+  
 }
 
+.Box-Pillars {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
+.box-concept {
+      display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 8px;
+    border-left: 1px solid var(--color-border-muted);
+padding-bottom: 64px;
+padding-left: 64px;
+padding-top: 64px;
+padding-right: 64px;
+}
+
+.orientarsi {
+    font-size: var(--text-500-font-size);
+    font-weight: var(--font-weight-medium);
+}
+
+.approfondire {
+      font-size: var(--text-500-font-size);
+    font-weight: var(--font-weight-medium);
+}
+
+.trovare-fonti {
+      font-size: var(--text-500-font-size);
+    font-weight: var(--font-weight-medium);
+}
+
+.text-orientarsi {
+    color: var(--color-muted);
+    font-family: var(--text-200-font-size);
+line-height: var(--text-200-line-height);
+}
+
+.text-approfondire {
+        color: var(--color-muted);
+    font-family: var(--text-200-font-size);
+line-height: var(--text-200-line-height);
+}
+
+.text-trovare {
+       color: var(--color-muted);
+    font-family: var(--text-200-font-size);
+line-height: var(--text-200-line-height);
+}
+
+@media (max-width: 1024px) {
+    .Box-Pillars{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .Box-Pillars {
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 640px) {
     :root {
         --spacing-64: 32px;
@@ -826,20 +884,21 @@ body {
 }
 
 
-.author-name {
- display: flex;
-    align-items: center;
-    gap: 0.5em;
-    font-family: var(--font-mono);
-    font-size: var(--eyebrow-font-size);
-
-
-   
+.Box-Pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.box-concept {
+    
+padding-bottom: 64px;
+padding-left: 64px;
+padding-top: 64px;
+padding-right: 64px;
+}
+
  
-.author-meta {
-    font-size: var(--text-200-font-size);
-    }
+
 
 .narrow-box {
     margin-left: auto;
