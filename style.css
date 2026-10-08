@@ -167,9 +167,10 @@ body {
 }
 
 .text-size-700 {
- font-size: var(--text-700-font-size);
- line-height: var(--text-700-line-height);
+    font-size: var(--text-700-font-size);
+    line-height: var(--text-700-line-height);
 }
+
 .hero-text {
     max-width: var(--hero-text-max-width);
 }
@@ -699,27 +700,28 @@ body {
 }
 
 
- 
+
 .text-size-700 {
     font-weight: var(--font-weight-medium);
 }
+
 .concept {
     max-width: var(--container-width);
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: left;
-    gap:16px;
+    gap: 16px;
     padding-bottom: 64px;
     padding-top: 64px;
     padding-left: 64px;
     padding-right: 64px;
-    border-right:1px solid var(--color-border-muted);
-    border-bottom:1px solid var(--color-border-muted);
+    border-right: 1px solid var(--color-border-muted);
+    border-bottom: 1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
-    border-top:1px solid var(--color-border-muted);
+    border-top: 1px solid var(--color-border-muted);
 }
 
 @media (max-width: 1000px) {
@@ -731,12 +733,12 @@ body {
 }
 
 .river {
-  max-width: var(--container-width);
+    max-width: var(--container-width);
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:64px;
+    gap: 64px;
     border-right: 1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
 
@@ -753,6 +755,7 @@ body {
     max-width: 676px;
     height: 330.422px;
 }
+
 .river-image {
     max-width: 676px;
 }
@@ -760,10 +763,11 @@ body {
 .color-white {
     color: #fff;
 }
+
 .assets-content {
     max-width: var(--container-width);
     background-color: #000;
-     padding: var(--spacing-64);
+    padding: var(--spacing-64);
     border-left: 1px solid var(--color-border-muted);
     border-right: 1px solid var(--color-border-muted);
     display: flex;
@@ -776,9 +780,20 @@ body {
     background-color: #000;
 }
 
+.palette-container .palette-text {
+    max-width: 463;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+
+}
+
+
+
 .Highlights-box {
     max-width: var(--container-width);
- margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     padding-top: var(--spacing-64);
     padding-bottom: var(--spacing-64);
@@ -791,11 +806,11 @@ body {
     padding-left: 64px;
     padding-top: 64px;
     padding-right: 64px;
-    border-right:1px solid var(--color-border-muted);
-    border-bottom:1px solid var(--color-border-muted);
+    border-right: 1px solid var(--color-border-muted);
+    border-bottom: 1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
-    border-top:1px solid var(--color-border-muted);
-    
+    border-top: 1px solid var(--color-border-muted);
+
 }
 
 
@@ -804,31 +819,66 @@ body {
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-    border-bottom:1px solid var(--color-border-muted);
+    border-bottom: 1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
-    border-right:1px solid var(--color-border-muted);
-  
+    border-right: 1px solid var(--color-border-muted);
+
 }
 
 .Box-Pillars {
-        display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:1px;
+    gap: 48px;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .box-concept {
-      display: flex;
+    display: flex;
     flex-direction: column;
     text-align: start;
     gap: 8px;
     border-left: 1px solid var(--color-border-muted);
-padding-bottom: 64px;
-padding-left: 64px;
-padding-top: 64px;
-padding-right: 64px;
+    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-top: 64px;
+    padding-right: 64px;
+}
+
+.telescopio {
+    background-color: #EBF9F4;
+    border-radius: 12%;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+
+.libro {
+    background-color: #EBF9F4;
+    border-radius: 12%;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+
+
+}
+
+.cercare {
+    background-color: #EBF9F4;
+    border-radius: 12%;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
 }
 
 .orientarsi {
@@ -837,35 +887,35 @@ padding-right: 64px;
 }
 
 .approfondire {
-      font-size: var(--text-500-font-size);
+    font-size: var(--text-500-font-size);
     font-weight: var(--font-weight-medium);
 }
 
 .trovare-fonti {
-      font-size: var(--text-500-font-size);
+    font-size: var(--text-500-font-size);
     font-weight: var(--font-weight-medium);
 }
 
 .text-orientarsi {
     color: var(--color-muted);
     font-family: var(--text-200-font-size);
-line-height: var(--text-200-line-height);
+    line-height: var(--text-200-line-height);
 }
 
 .text-approfondire {
-        color: var(--color-muted);
+    color: var(--color-muted);
     font-family: var(--text-200-font-size);
-line-height: var(--text-200-line-height);
+    line-height: var(--text-200-line-height);
 }
 
 .text-trovare {
-       color: var(--color-muted);
+    color: var(--color-muted);
     font-family: var(--text-200-font-size);
-line-height: var(--text-200-line-height);
+    line-height: var(--text-200-line-height);
 }
 
 @media (max-width: 1024px) {
-    .Box-Pillars{
+    .Box-Pillars {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -875,6 +925,7 @@ line-height: var(--text-200-line-height);
         grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 640px) {
     :root {
         --spacing-64: 32px;
@@ -882,7 +933,7 @@ line-height: var(--text-200-line-height);
 }
 
 .Sitemap-box {
-    max-width:var(--container-width);
+    max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
     padding: var(--spacing-64);
@@ -890,11 +941,11 @@ line-height: var(--text-200-line-height);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:16px;
+    gap: 16px;
 }
 
 .quotebox {
-        max-width: var(--container-width);
+    max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
     padding: var(--spacing-64);
@@ -918,23 +969,24 @@ line-height: var(--text-200-line-height);
     max-width: 640px;
 }
 
- 
+
 .quote-author-info {
     display: flex;
     flex-direction: column;
     padding-bottom: 152px;
     padding-top: 208px;
-    
-}
- .border-top {
-     border-top: 1px solid var(--color-border-muted);
 
-    gap:24px;
- } 
+}
+
+.border-top {
+    border-top: 1px solid var(--color-border-muted);
+
+    gap: 24px;
+}
 
 .concept-intro {
     color: var(--color-text-muted2);
-    
+
 }
 
 
@@ -944,14 +996,14 @@ line-height: var(--text-200-line-height);
 }
 
 .box-concept {
-    
-padding-bottom: 64px;
-padding-left: 64px;
-padding-top: 64px;
-padding-right: 64px;
+
+    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-top: 64px;
+    padding-right: 64px;
 }
 
- 
+
 
 
 .narrow-box {
@@ -989,7 +1041,7 @@ padding-right: 64px;
     gap: 1em;
     border-top: 1px solid var(--color-border-muted);
     padding-top: 10px;
-    
+
 }
 
 .breakoutTabs-card.breakoutTabs-card-active {
@@ -1036,7 +1088,7 @@ padding-right: 64px;
 }
 
 .footer-content {
-    --hero-text-max-width: 600px; 
+    --hero-text-max-width: 600px;
     background: var(--color-black);
     color: var(--color-white);
     display: flex;
@@ -1047,14 +1099,14 @@ padding-right: 64px;
     border-left: 1px solid var(--color-border-muted);
     border-right: 1px solid var(--color-border-muted);
     align-items: center;
-    
+
 }
 
 .button-footer {
     max-width: 300px;
     background-color: var(--color-button-primary-bg);
     border: none;
-    
+
 }
 
 .button-footer:hover {
@@ -1073,7 +1125,7 @@ padding-right: 64px;
     }
 
     .breakoutTabs-card-active .breakoutTabs-card-description {
-        display: block; 
+        display: block;
     }
 
     .icon-arrow {
@@ -1083,5 +1135,5 @@ padding-right: 64px;
     .breakoutTabs-card-active .icon-arrow {
         transform: rotate(0deg);
     }
-    
+
 }
