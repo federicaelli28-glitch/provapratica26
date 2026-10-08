@@ -757,6 +757,24 @@ body {
     max-width: 676px;
 }
 
+.color-white {
+    color: #fff;
+}
+.assets-content {
+    max-width: var(--container-width);
+    background-color: #000;
+     padding: var(--spacing-64);
+    border-left: 1px solid var(--color-border-muted);
+    border-right: 1px solid var(--color-border-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--hero-content-gap);
+}
+
+.assets {
+    background-color: #000;
+}
 
 .Highlights-box {
     max-width: var(--container-width);
