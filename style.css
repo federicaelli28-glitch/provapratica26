@@ -895,10 +895,6 @@ body {
     gap:16px;
 }
 
-.sitemap_image {
-    max-width: 676px;
-    height: 330.422px;
-}
 
 .river-image {
     max-width: 676px;
@@ -940,6 +936,8 @@ body {
 
 .assets-content {
     max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
     background-color: #000;
     padding: var(--spacing-64);
     border-left: 1px solid var(--color-border-muted);
@@ -947,24 +945,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--hero-content-gap);
+    gap: 16px;
 }
 
 .assets {
     background-color: #000;
 }
 
-
-
-.palette-container {
-     max-width: var(--container-width);
+.assets-river1 {
+    max-width: var(--container-width);
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    justify-content: center;
     gap: 64px;
     border-right: 1px solid var(--color-border-muted);
     border-left: 1px solid var(--color-border-muted);
 
+}
+.assets-river2 {
+     max-width: var(--container-width);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    border-right: 1px solid var(--color-border-muted);
+    border-left: 1px solid var(--color-border-muted);
+
+}
+
+.assets-text {
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
 }
 
 .tipografia-img {
@@ -972,6 +988,10 @@ body {
     height:422px;
 }
 
+.palette-img {
+     width:639px;
+    height:422px;
+}
 
 .Highlights-box {
     max-width: var(--container-width);
