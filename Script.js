@@ -85,4 +85,4 @@ cards.forEach((card, index) => {
     image.src = images[index].src;
     image.alt = images[index].alt;
   });
-});
+}); 
