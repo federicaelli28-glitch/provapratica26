@@ -62,3 +62,27 @@ desktopMedia.addEventListener('change', function () {
 
 
 
+const cards = document.querySelectorAll('.breakoutTabs-card');
+const image = document.querySelector('.image-footer');
+
+const images = [
+  { src: 'assets/images/primer-study.svg',  alt: 'Studiare il sistema' },
+  { src: 'assets/images/primer-layout.svg', alt: 'Comporre la pagina' },
+  { src: 'assets/images/primer-check.svg',  alt: 'Verificare il risultato' }
+];
+
+cards.forEach((card, index) => {
+  const button = card.querySelector('.breakoutTabs-card-button');
+
+  button.addEventListener('click', () => {
+    // spegne tutte le card
+    cards.forEach(c => c.classList.remove('breakoutTabs-card-active'));
+
+    // accende quella cliccata
+    card.classList.add('breakoutTabs-card-active');
+
+    // cambia l'immagine
+    image.src = images[index].src;
+    image.alt = images[index].alt;
+  });
+});
